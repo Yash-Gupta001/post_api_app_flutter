@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:post_api_app_flutter/pages/postregisterscreen.dart';
 
+import 'pages/post_login.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const Postregisterscreen(),
+      home: const Postloginscreen(),
     );
   }
 }

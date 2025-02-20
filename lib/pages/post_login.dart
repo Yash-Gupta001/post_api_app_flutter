@@ -25,11 +25,11 @@ class _PostloginscreenState extends State<Postloginscreen> {
       if(response.statusCode == 200){
         var jsonData = jsonDecode(response.body);
         print(jsonData);
-        print("Register successful");
+        print("Login successful");
       }
       else{
         var  error = jsonDecode(response.body);
-        print("unable to register: ${error}");
+        print("unable to login: ${error}");
       }
     } 
     catch(e){
@@ -43,7 +43,7 @@ class _PostloginscreenState extends State<Postloginscreen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: const Text("Register Post API"),
+          title: const Text("Login Post API"),
           centerTitle: true,
         ),
         body: Padding(
@@ -93,3 +93,12 @@ class _PostloginscreenState extends State<Postloginscreen> {
     );
   }
 }
+
+/**
+ * for testing login successfull use
+{
+    "email": "eve.holt@reqres.in",
+    "password": "cityslicka"
+}
+ * 
+ */
