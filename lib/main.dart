@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:post_api_app_flutter/pages/postregisterscreen.dart';
+import 'package:post_api_app_flutter/pages/post_register.dart';
 
 import 'pages/post_login.dart';
 
