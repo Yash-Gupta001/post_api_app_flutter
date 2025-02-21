@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:post_api_app_flutter/Upload%20image/upload_image.dart';
 import 'package:post_api_app_flutter/pages/post_register.dart';
 import 'package:post_api_app_flutter/without%20model/getmethodpage_without_model.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const GetmethodpageWithoutModel(),
+      home: const UploadImage(),
     );
   }
 }
