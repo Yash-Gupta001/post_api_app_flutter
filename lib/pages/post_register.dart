@@ -36,8 +36,6 @@ class _PostregisterscreenState extends State<Postregisterscreen> {
       print("Error:$e");
     }
   }
-
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
