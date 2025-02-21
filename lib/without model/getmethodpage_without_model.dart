@@ -59,25 +59,34 @@ class _GetmethodpageWithoutModelState extends State<GetmethodpageWithoutModel> {
           itemBuilder: (context,index){
           return Padding(
             padding: const EdgeInsets.all(18.0),
-            child: Column(
-              children: [
-
-                userInfo(index,"Name : ",
-                postModelData[index]['name'].toString(),
-                ),
-
-                userInfo(index,"Email : ",
-                postModelData[index]['email'].toString(),
-                ),
-
-                userInfo(index,"City : ",
-                postModelData[index]['address']['city'].toString(),
-                ),
-
-                userInfo(index,"Street : ",
-                postModelData[index]['address']['street'].toString(),
-                ),
-              ],
+            child: Material(
+              elevation: 2,
+              borderRadius: BorderRadius.circular(20),
+              child: Column(
+                children: [
+              
+                  userInfo(index,"Name : ",
+                  postModelData[index]['name'].toString(),
+                  ),
+              
+                  userInfo(index,"Email : ",
+                  postModelData[index]['email'].toString(),
+                  ),
+              
+                  userInfo(index,"City : ",
+                  postModelData[index]['address']['city'].toString(),
+                  ),
+              
+                  userInfo(index,"Street : ",
+                  postModelData[index]['address']['street'].toString(),
+                  ),
+              
+                  userInfo(index,"Zipcode : ",
+                  postModelData[index]['address']['zipcode'].toString(),
+                  ),
+              
+                ],
+              ),
             ),
           );
         },)
